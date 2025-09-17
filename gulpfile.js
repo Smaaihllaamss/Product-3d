@@ -71,14 +71,14 @@ function copyWOFF() {
 
 //Manual image processing
 function images() {
-  return src([paths.images.src, paths.images.svg])
+  return src([paths.images.src, paths.images.svg], { encoding: false })
     .pipe(newer(paths.images.dest))
     .pipe(dest(paths.images.dest));
 }
 
 //Automatic image processing
 function webpImages() {
-  return src(paths.images.webp)
+  return src(paths.images.webp, { encoding: false })
     .pipe(newer(paths.images.dest))
     .pipe(webp({ quality: 90 }))
     .pipe(rename({ extname: '.webp' }))
