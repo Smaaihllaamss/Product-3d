@@ -8,6 +8,7 @@ import concat from 'gulp-concat';
 import browserSyncLib from 'browser-sync';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
+import rename from 'gulp-rename';
 import ttf2woff2 from 'gulp-ttf2woff2';
 import webp from 'gulp-webp';
 import svgSprite from 'gulp-svg-sprite';
@@ -80,6 +81,7 @@ function webpImages() {
   return src(paths.images.webp)
     .pipe(newer(paths.images.dest))
     .pipe(webp({ quality: 90 }))
+    .pipe(rename({ extname: '.webp' }))
     .pipe(size({ title: 'WebP images' }))
     .pipe(dest(paths.images.dest));
 }
