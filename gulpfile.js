@@ -170,7 +170,7 @@ export {
   watching,
 };
 
-const fonts = parallel(convertTTF, copyWOFF);
+const fonts = parallel(/*convertTTF, */ copyWOFF);
 const processImages = parallel(webpImages, sprite);
 const staticAssets = parallel(fonts, images, copyResources, copySwiper);
 
