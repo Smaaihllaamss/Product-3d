@@ -1,5 +1,6 @@
 # Build
 layout/
+dist/
 
 # Node dependencies
 node_modules/
