@@ -1,0 +1,107 @@
+.header {
+  width: 100%;
+  padding: 10px 15px;
+  color: var(--color3);
+  box-shadow: 10px 10px 10px transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: all 0.3s;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  @media screen and (min-width: $bp-laptop) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 40px 20px;
+  }
+
+  &__wrapper {
+    @media screen and (min-width: $bp-laptop) {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      gap: 10%;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  &__logo-link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-img {
+    width: 97px;
+    height: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 110px;
+      height: 27px;
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @media screen and (min-width: $bp-laptop) {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      column-gap: 2em;
+      row-gap: 0.5em;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__address {
+    display: none;
+
+    @media screen and (min-width: $bp-laptop) {
+      width: max-content;
+      display: flex;
+      align-items: center;
+      margin-right: 1em;
+    }
+  }
+
+  &__burger-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+
+    @media screen and (min-width: $bp-laptop) {
+      display: none;
+    }
+  }
+
+  &__burger-icon {
+    width: 25px;
+    height: 12px;
+  }
+}
+
+.header.scrolled {
+  background-color: var(--secondary);
+  box-shadow: 10px 10px 10px var(--primary);
+}

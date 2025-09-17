@@ -1,0 +1,116 @@
+.btn {
+  display: block;
+  font-family: inherit;
+  font-size: 0.75rem; //0.75rem = 12px
+  line-height: 1;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all var(--transition);
+
+  @media screen and (min-width: $bp-mobile) {
+    font-size: 0.875rem; //0.875rem = 14px
+  }
+
+  &:hover:not([disabled]) {
+    @media screen and (min-width: $bp-laptop) {
+      border-radius: 20px 0;
+    }
+  }
+
+  &__primary {
+    font-weight: 500;
+    padding: 1.85em 2.43em;
+    color: var(--secondary);
+    background-color: var(--primary);
+    border: 1px solid currentColor;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border: 1px solid var(--primary);
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      z-index: -1;
+      opacity: 0.5;
+      transition: all var(--transition);
+    }
+
+    &:hover.btn__primary::after {
+      @media screen and (min-width: $bp-laptop) {
+        opacity: 0;
+      }
+    }
+  }
+
+  &__secondary {
+    font-weight: 500;
+    padding: 0.92em 1em;
+    color: var(--primary);
+    background-color: var(--secondary);
+    border: 1px solid currentColor;
+
+    @media screen and (min-width: $bp-mobile) {
+      padding: 1.85em 2em;
+    }
+  }
+
+  &__action {
+    max-width: 534px;
+    font-weight: 500;
+    padding: 1.85em 4.4em;
+    color: var(--secondary);
+    background-color: var(--primary);
+    border: 1px solid currentColor;
+
+    @media screen and (min-width: $bp-desktop) {
+      width: max-content;
+      max-width: 340px;
+    }
+  }
+
+  &__outline {
+    font-weight: 400;
+    padding: 26px 50px;
+    color: var(--primary);
+    background-color: transparent;
+    border: 1px solid currentColor;
+  }
+
+  &__fit {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  &__arrow {
+    fill: currentColor;
+    width: 1em;
+    height: 0.57em;
+    transform: translateY(-20%);
+    margin-left: 0.36em;
+  }
+}
+
+button:disabled {
+  opacity: 0.6;
+}
+
+.btn-close-dialog {
+  width: 44px;
+  height: 44px;
+  font-family: inherit;
+  font-size: 26px;
+  font-weight: 200;
+  padding: 10px;
+  color: var(--color5);
+  background-color: var(--backdrop2);
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--secondary);
+  }
+}

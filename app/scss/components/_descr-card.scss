@@ -1,0 +1,56 @@
+.descr-card {
+  width: 110%;
+  min-height: 150px;
+  font-size: 1.1em;
+  font-style: italic;
+  font-weight: 700;
+  padding: 22px 15px;
+  transform: translateX(-15px);
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+    90deg,
+    rgba(251, 251, 251, 1) 0%,
+    rgba(251, 251, 251, 1) 50%,
+    rgba(251, 251, 251, 0) 100%
+  );
+
+  @media screen and (min-width: $bp-mobile) {
+    font-size: 1.33em; //1.33em = 24px
+    padding: 22px 46px;
+    transform: translateX(-46px);
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    min-width: 730px;
+    padding-right: 104px;
+  }
+}
+
+.descr-small {
+  width: 100%;
+  max-width: 500px;
+  font-size: 18px; /* 1.875rem = 30px */
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1.66em 1.66em 1.66em 1em;
+  transform: translateX(-5px);
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+    90deg,
+    rgba(251, 251, 251, 1) 0%,
+    rgba(251, 251, 251, 1) 50%,
+    rgba(251, 251, 251, 0) 100%
+  );
+
+  @media screen and (min-width: $bp-mobile) {
+    font-size: 22px; /* 1.875rem = 30px */
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    min-width: 660px;
+    font-size: 28px; /* 1.875rem = 30px */
+  }
+}

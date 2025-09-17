@@ -1,0 +1,64 @@
+.nav-link {
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-transform: uppercase;
+  text-decoration: 1px solid underline transparent;
+  text-underline-position: under;
+  text-underline-offset: 0.33em;
+  transition: all var(--transition);
+
+  &__header {
+    font-size: 0.94rem; /* 0.94rem = 15px */
+
+    &:hover {
+      @media screen and (min-width: $bp-laptop) {
+        color: var(--primary);
+        text-decoration-color: currentColor;
+      }
+    }
+  }
+
+  &__footer {
+    font-size: 0.94rem; /* 0.94rem = 15px */
+
+    &:hover {
+      @media screen and (min-width: $bp-laptop) {
+        color: var(--color4);
+        text-decoration-color: currentColor;
+      }
+    }
+  }
+
+  &__mobile-menu {
+    font-size: 1.125rem; /* 1.125rem = 18px */
+
+    &:focus {
+      color: var(--color4);
+      text-decoration-color: currentColor;
+    }
+  }
+}
+
+.tel-link {
+  display: block;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  scale: 1;
+  transition: all var(--transition);
+
+  &:hover {
+    @media screen and (min-width: $bp-laptop) {
+      scale: 1.2;
+    }
+  }
+
+  &__header {
+    font-size: 1.125rem; /* 1.125rem = 18px */
+  }
+}

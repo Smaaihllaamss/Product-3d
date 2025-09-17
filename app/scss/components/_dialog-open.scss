@@ -1,0 +1,23 @@
+dialog:not([open]) {
+  display: none;
+}
+
+dialog[open] {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  border: none;
+  padding: 0;
+  background: transparent;
+}
+
+dialog::backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--backdrop1);
+}

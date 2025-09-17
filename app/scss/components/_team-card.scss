@@ -1,0 +1,75 @@
+.team-card {
+  max-width: 360px;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media screen and (min-width: $bp-laptop) {
+    justify-content: flex-start;
+  }
+
+  &__photo {
+    width: 222px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 25px;
+    position: relative;
+
+    &--offset {
+      justify-content: flex-start;
+    }
+
+    &::before {
+      content: '';
+      width: 202px;
+      height: 210px;
+      background-color: var(--primary);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    &::after {
+      content: '';
+      width: 136px;
+      height: 190px;
+      background-image: url('../images/team-grid.png');
+      background-image: -webkit-image-set(
+        url('../images/team-grid.png') 1x,
+        url('../images/team-grid@2x.png') 2x
+      );
+      background-image: image-set(
+        url('../images/team-grid.png') type('image/png') 1x,
+        url('../images/team-grid@2x.png') type('image/png') 2x
+      );
+      position: absolute;
+      bottom: 40px;
+      right: 0;
+      z-index: -2;
+    }
+  }
+
+  &__img {
+    display: block;
+  }
+
+  &__name {
+    font-family: inherit;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+    margin-bottom: 0.2em;
+  }
+
+  &__caption {
+    font-size: 1rem;
+  }
+}

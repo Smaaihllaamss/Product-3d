@@ -1,0 +1,58 @@
+.swiper {
+  display: flex;
+}
+
+.swiper-wrapper {
+  box-sizing: content-box;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: inherit;
+  width: 100px;
+  height: 60px;
+  padding: 10px;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all var(--transition);
+
+  &:hover {
+    @media screen and (min-width: $bp-laptop) {
+      border-color: var(--primary);
+    }
+  }
+}
+
+.swiper-button-prev {
+  left: 50%;
+  transform: translateX(-110%);
+}
+.swiper-button-next {
+  right: 50%;
+  transform: translateX(110%);
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  width: 20px;
+  height: 16px;
+  fill: var(--primary);
+}
+
+.swiper-button-prev svg {
+  transform: rotate(180deg);
+}

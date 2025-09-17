@@ -1,0 +1,35 @@
+@import './utils/fonts';
+@import './utils/variables';
+@import './base';
+@import './utils/texts';
+@import './utils/utils';
+
+@import './layouts/section';
+@import './layouts/container';
+
+@import './components/buttons';
+@import './components/descr-card';
+@import './components/dialog-open';
+@import './components/icons';
+@import './components/input';
+@import './components/links';
+@import './components/price-card';
+@import './components/team-card';
+
+@import './layouts/header';
+@import './layouts/mobile-menu';
+@import './layouts/hero-section';
+@import './layouts/about-section';
+@import './layouts/swiper';
+@import './layouts/product';
+@import './layouts/product-swiper';
+@import './layouts/product-card';
+@import './layouts/product-card-swiper';
+@import './layouts/prices-section';
+@import './layouts/team-section';
+@import './layouts/team-swiper';
+@import './layouts/priority-section';
+@import './layouts/contact-section';
+@import './layouts/contact-form';
+@import './layouts/dialog-video';
+@import './layouts/footer';

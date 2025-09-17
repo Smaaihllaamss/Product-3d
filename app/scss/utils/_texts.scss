@@ -1,0 +1,28 @@
+.title {
+  text-transform: uppercase;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1;
+
+  &__span {
+    font-style: italic;
+    font-weight: 300;
+  }
+}
+
+.section-title {
+  font-size: 35px;
+  letter-spacing: 0.05em;
+  margin-bottom: 35px;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 40px;
+    margin-bottom: 55px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 60px;
+    margin-bottom: 80px;
+  }
+}

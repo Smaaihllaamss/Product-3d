@@ -1,0 +1,132 @@
+.footer {
+  width: 100%;
+  padding: 30px 0 47px;
+  font-size: 0.94rem;
+  color: var(--secondary);
+  background-color: var(--primary);
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: $bp-laptop) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 15px;
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 5%;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      gap: 10%;
+    }
+  }
+
+  &__nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      align-items: center;
+      gap: 5%;
+      flex-grow: 1;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      gap: 10%;
+    }
+  }
+
+  &__logo-link {
+    width: 107px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-img {
+    width: 97px;
+    height: 24px;
+  }
+
+  &__inner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 0;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+
+  &__address-links {
+    display: block;
+    font-family: inherit;
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+    font-weight: 100;
+    line-height: 1.1;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__copy-text {
+  }
+
+  &__privacy-link {
+    display: block;
+    text-decoration: underline;
+    color: var(--color6);
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  &__menu {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1em;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 30px;
+      align-items: flex-start;
+      margin-top: 0.2em;
+    }
+  }
+
+  &__address {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      align-items: center;
+      margin-right: 1em;
+    }
+  }
+
+  &__tel-link {
+    width: max-content;
+  }
+}

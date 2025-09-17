@@ -1,0 +1,52 @@
+.team-section {
+  margin-bottom: 50px;
+
+  &__title {
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__swiper-outer-mob {
+    display: flex;
+    position: relative;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 60px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    &--t {
+      display: none;
+
+      @media screen and (min-width: $bp-tablet) {
+        display: grid;
+      }
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}

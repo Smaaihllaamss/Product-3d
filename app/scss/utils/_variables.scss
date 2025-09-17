@@ -1,0 +1,24 @@
+// Breakpoints:
+$bp-mobile: 580px;
+$bp-tablet: 769px;
+$bp-laptop: 993px;
+$bp-desktop: 1201px;
+
+:root {
+  font-size: 16px;
+
+  // Colors:
+  --primary: #303030; //rgba(48, 48, 48, 1)
+  --secondary: #fff;
+  --color3: #404040;
+  --color4: #8c8c8c;
+  --color5: #ccc;
+  --color6: #b2b2b2;
+  --back1: rgba(251, 251, 251, 0);
+  --back2: rgba(251, 251, 251, 1);
+  --backdrop1: rgba(48, 48, 48, 0.9);
+  --backdrop2: rgba(30, 30, 30, 0.6);
+
+  //Transitions:
+  --transition: 0.3s;
+}

@@ -1,0 +1,85 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+body {
+  color: var(--primary);
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 1rem; /* 1rem = 16px */
+  font-weight: 300;
+  line-height: 1.45;
+  background-image: url('../images/bg-noise.png');
+  background-image: -webkit-image-set(
+    url('../images/bg-noise.png') 1x,
+    url('../images/bg-noise@2x.png') 2x
+  );
+  background-image: image-set(
+    url('../images/bg-noise.png') type('image/png') 1x,
+    url('../images/bg-noise@2x.png') type('image/png') 2x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+
+  @media screen and (min-width: $bp-mobile) {
+    font-size: 1.125rem; /* 1.125rem = 18px */
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+address {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+p {
+  &:not(:last-child) {
+    margin-bottom: 1.39em;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
