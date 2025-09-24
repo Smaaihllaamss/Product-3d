@@ -5,7 +5,7 @@ export const paths = {
     dest: 'dist/',
   },
   fonts: {
-    src: 'app/fonts/*.{woff, woff2}',
+    src: 'app/fonts/*.{woff,woff2}',
     dest: 'dist/fonts/',
   },
   styles: {

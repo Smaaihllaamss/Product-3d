@@ -147,7 +147,7 @@ function cleanDist() {
 }
 
 function building() {
-  return src([/*paths.build.html, */ paths.build.css, paths.build.js], {
+  return src([paths.build.css, paths.build.js], {
     base: paths.build.base,
   }).pipe(dest(paths.build.dest));
 }
