@@ -119,6 +119,7 @@ function sprite() {
     .pipe(size({ title: 'SVG-sprite' }))
     .pipe(dest(paths.icons.dest));
 }
+
 function copyResources() {
   return src(paths.resources.src)
     .pipe(newer(paths.resources.dest))
@@ -161,14 +162,16 @@ function building() {
 }
 
 export {
-  convertTTF,
-  copyWOFF,
+  html,
   styles,
   scripts,
+  convertTTF,
+  copyWOFF,
   images,
   webpImages,
   sprite,
   copyResources,
+  copySwiper,
   watching,
 };
 

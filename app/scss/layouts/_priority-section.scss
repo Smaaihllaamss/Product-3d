@@ -142,10 +142,14 @@
       height: 241px;
       background-image: url('../images/priority-grid.png');
       background-image: -webkit-image-set(
+        url('../images/priority-grid.webp') 1x,
+        url('../images/priority-grid@2x.webp') 2x,
         url('../images/priority-grid.png') 1x,
         url('../images/priority-grid@2x.png') 2x
       );
       background-image: image-set(
+        url('../images/priority-grid.webp') type('image/webp') 1x,
+        url('../images/priority-grid@2x.webp') type('image/webp') 2x,
         url('../images/priority-grid.png') type('image/png') 1x,
         url('../images/priority-grid@2x.png') type('image/png') 2x
       );

@@ -51,7 +51,7 @@
             <a class="header__logo-link" href="index.html">
               <img
                 class="header__logo-img"
-                src="./images/logo-header.svg"
+                src="images/logo-header.svg"
                 alt="Logo of the 3d Product"
               />
             </a>
@@ -74,7 +74,7 @@
             </ul>
             <button class="header__burger-btn menu-btn-open" type="button">
               <svg class="header__burger-icon">
-                <use href="./images/icons.svg#icon-burger"></use>
+                <use href="images/icons.svg#icon-burger"></use>
               </svg>
             </button>
           </nav>
@@ -89,7 +89,7 @@
                 <a class="mobile-menu__link" href="index.html">
                   <img
                     class="mobile-menu__logo-img"
-                    src="./images/logo-footer.svg"
+                    src="images/logo-footer.svg"
                     alt="Logo of the 3d Product"
                   />
                 </a>
@@ -153,7 +153,7 @@
                 <a href="#contact" class="btn btn__primary btn__fit"
                   >Get in touch today
                   <svg class="btn__arrow">
-                    <use href="./images/icons.svg#icon-arrow"></use>
+                    <use href="images/icons.svg#icon-arrow"></use>
                   </svg>
                 </a>
               </div>
@@ -202,15 +202,24 @@
               </div>
               <div class="about-section__images">
                 <div class="about-section__img-outer">
-                  <img
-                    class="about-section__img"
-                    src="./images/about-section-1.jpg"
-                    srcset="
-                      ./images/about-section-1.jpg    1x,
-                      ./images/about-section-1@2x.jpg 2x
-                    "
-                    alt="The team of the 3d-Product company"
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        images/about-section-1.webp    1x,
+                        images/about-section-1@2x.webp 2x
+                      "
+                    />
+                    <img
+                      class="about-section__img"
+                      src="images/about-section-1.jpg"
+                      srcset="
+                        images/about-section-1.jpg    1x,
+                        images/about-section-1@2x.jpg 2x
+                      "
+                      alt="The team of the 3d-Product company"
+                    />
+                  </picture>
                 </div>
               </div>
               <ul
@@ -241,203 +250,338 @@
                       <li
                         class="product-swiper__cell product-swiper__cell--big-l"
                       >
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/watch-1.jpg"
-                          srcset="
-                            /images/product/watch-1.jpg    1x,
-                            /images/product/watch-1@2x.jpg 2x
-                          "
-                          alt="3d model of the watch main image"
-                          width="520"
-                          height="520"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/watch-1.webp    1x,
+                              images/product/watch-1@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/watch-1.jpg"
+                            srcset="
+                              images/product/watch-1.jpg    1x,
+                              images/product/watch-1@2x.jpg 2x
+                            "
+                            alt="3d model of the watch main image"
+                            width="520"
+                            height="520"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/watch-2.jpg"
-                          srcset="
-                            /images/product/watch-2.jpg    1x,
-                            /images/product/watch-2@2x.jpg 2x
-                          "
-                          alt="watch face"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/watch-2.webp    1x,
+                              images/product/watch-2@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/watch-2.jpg"
+                            srcset="
+                              images/product/watch-2.jpg    1x,
+                              images/product/watch-2@2x.jpg 2x
+                            "
+                            alt="watch face"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/watch-3.jpg"
-                          srcset="
-                            /images/product/watch-3.jpg    1x,
-                            /images/product/watch-3@2x.jpg 2x
-                          "
-                          alt="watch belt"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/watch-3.webp    1x,
+                              images/product/watch-3@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/watch-3.jpg"
+                            srcset="
+                              images/product/watch-3.jpg    1x,
+                              images/product/watch-3@2x.jpg 2x
+                            "
+                            alt="watch belt"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/watch-4.jpg"
-                          srcset="
-                            /images/product/watch-4.jpg    1x,
-                            /images/product/watch-4@2x.jpg 2x
-                          "
-                          alt="watch sensor"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/watch-4.webp    1x,
+                              images/product/watch-4@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/watch-4.jpg"
+                            srcset="
+                              images/product/watch-4.jpg    1x,
+                              images/product/watch-4@2x.jpg 2x
+                            "
+                            alt="watch sensor"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/watch-5.jpg"
-                          srcset="
-                            /images/product/watch-5.jpg    1x,
-                            /images/product/watch-5@2x.jpg 2x
-                          "
-                          alt="watch time controller buttons"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/watch-5.webp    1x,
+                              images/product/watch-5@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/watch-5.jpg"
+                            srcset="
+                              images/product/watch-5.jpg    1x,
+                              images/product/watch-5@2x.jpg 2x
+                            "
+                            alt="watch time controller buttons"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/filter-1.jpg"
-                          srcset="
-                            ./images/product/filter-1.jpg    1x,
-                            ./images/product/filter-1@2x.jpg 2x
-                          "
-                          alt="3d model of the filter, view of the enter for the water"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/filter-1.webp    1x,
+                              images/product/filter-1@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/filter-1.jpg"
+                            srcset="
+                              images/product/filter-1.jpg    1x,
+                              images/product/filter-1@2x.jpg 2x
+                            "
+                            alt="3d model of the filter, view of the enter for the water"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/filter-2.jpg"
-                          srcset="
-                            ./images/product/filter-2.jpg    1x,
-                            ./images/product/filter-2@2x.jpg 2x
-                          "
-                          alt="side instraction for the filter"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/filter-2.webp    1x,
+                              images/product/filter-2@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/filter-2.jpg"
+                            srcset="
+                              images/product/filter-2.jpg    1x,
+                              images/product/filter-2@2x.jpg 2x
+                            "
+                            alt="side instraction for the filter"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li
                         class="product-swiper__cell product-swiper__cell--big-r"
                       >
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/filter-3.jpg"
-                          srcset="
-                            ./images/product/filter-3.jpg    1x,
-                            ./images/product/filter-3@2x.jpg 2x
-                          "
-                          alt="water filter main image"
-                          width="520"
-                          height="520"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/filter-3.webp    1x,
+                              images/product/filter-3@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/filter-3.jpg"
+                            srcset="
+                              images/product/filter-3.jpg    1x,
+                              images/product/filter-3@2x.jpg 2x
+                            "
+                            alt="water filter main image"
+                            width="520"
+                            height="520"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/filter-4.jpg"
-                          srcset="
-                            ./images/product/filter-4.jpg    1x,
-                            ./images/product/filter-4@2x.jpg 2x
-                          "
-                          alt="inside strucrute of the water filter"
-                          width="250"
-                          height="650"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/filter-4.webp    1x,
+                              images/product/filter-4@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/filter-4.jpg"
+                            srcset="
+                              images/product/filter-4.jpg    1x,
+                              images/product/filter-4@2x.jpg 2x
+                            "
+                            alt="inside strucrute of the water filter"
+                            width="250"
+                            height="650"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/filter-5.jpg"
-                          srcset="
-                            ./images/product/filter-5.jpg    1x,
-                            ./images/product/filter-5@2x.jpg 2x
-                          "
-                          alt="water filter cap"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/filter-5.webp    1x,
+                              images/product/filter-5@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/filter-5.jpg"
+                            srcset="
+                              images/product/filter-5.jpg    1x,
+                              images/product/filter-5@2x.jpg 2x
+                            "
+                            alt="water filter cap"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li
                         class="product-swiper__cell product-swiper__cell--big-l"
                       >
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/printer-1.jpg"
-                          srcset="
-                            ./images/product/printer-1.jpg    1x,
-                            ./images/product/printer-1@2x.jpg 2x
-                          "
-                          alt="3d printer"
-                          width="520"
-                          height="520"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/printer-1.webp    1x,
+                              images/product/printer-1@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/printer-1.jpg"
+                            srcset="
+                              images/product/printer-1.jpg    1x,
+                              images/product/printer-1@2x.jpg 2x
+                            "
+                            alt="3d printer"
+                            width="520"
+                            height="520"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/printer-2.jpg"
-                          srcset="
-                            ./images/product/printer-2.jpg    1x,
-                            ./images/product/printer-2@2x.jpg 2x
-                          "
-                          alt="cooler of the printer"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/printer-2.webp    1x,
+                              images/product/printer-2@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/printer-2.jpg"
+                            srcset="
+                              images/product/printer-2.jpg    1x,
+                              images/product/printer-2@2x.jpg 2x
+                            "
+                            alt="cooler of the printer"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/printer-3.jpg"
-                          srcset="
-                            ./images/product/printer-3.jpg    1x,
-                            ./images/product/printer-3@2x.jpg 2x
-                          "
-                          alt="inside structure of the cooler"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/printer-3.webp    1x,
+                              images/product/printer-3@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/printer-3.jpg"
+                            srcset="
+                              images/product/printer-3.jpg    1x,
+                              images/product/printer-3@2x.jpg 2x
+                            "
+                            alt="inside structure of the cooler"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/printer-4.jpg"
-                          srcset="
-                            ./images/product/printer-4.jpg    1x,
-                            ./images/product/printer-4@2x.jpg 2x
-                          "
-                          alt="printer rail"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/printer-4.webp    1x,
+                              images/product/printer-4@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/printer-4.jpg"
+                            srcset="
+                              images/product/printer-4.jpg    1x,
+                              images/product/printer-4@2x.jpg 2x
+                            "
+                            alt="printer rail"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/printer-5.jpg"
-                          srcset="
-                            ./images/product/printer-5.jpg    1x,
-                            ./images/product/printer-5@2x.jpg 2x
-                          "
-                          alt="printing material"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/printer-5.webp    1x,
+                              images/product/printer-5@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/printer-5.jpg"
+                            srcset="
+                              images/product/printer-5.jpg    1x,
+                              images/product/printer-5@2x.jpg 2x
+                            "
+                            alt="printing material"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                     </ul>
                   </div>
@@ -446,166 +590,274 @@
                       <li
                         class="product-swiper__cell product-swiper__cell--big-l"
                       >
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/usb-1.jpg"
-                          srcset="
-                            ./images/product/usb-1.jpg    1x,
-                            ./images/product/usb-1@2x.jpg 2x
-                          "
-                          alt="two usb adaptors"
-                          width="520"
-                          height="520"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/usb-1.webp    1x,
+                              images/product/usb-1@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/usb-1.jpg"
+                            srcset="
+                              images/product/usb-1.jpg    1x,
+                              images/product/usb-1@2x.jpg 2x
+                            "
+                            alt="two usb adaptors"
+                            width="520"
+                            height="520"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/usb-2.jpg"
-                          srcset="
-                            ./images/product/usb-2.jpg    1x,
-                            ./images/product/usb-2@2x.jpg 2x
-                          "
-                          alt="usb adaptor`s nest"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/usb-2.webp    1x,
+                              images/product/usb-2@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/usb-2.jpg"
+                            srcset="
+                              images/product/usb-2.jpg    1x,
+                              images/product/usb-2@2x.jpg 2x
+                            "
+                            alt="usb adaptor`s nest"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/usb-3.jpg"
-                          srcset="
-                            ./images/product/usb-3.jpg    1x,
-                            ./images/product/usb-3@2x.jpg 2x
-                          "
-                          alt="usb adaptor side view"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/usb-3.webp    1x,
+                              images/product/usb-3@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/usb-3.jpg"
+                            srcset="
+                              images/product/usb-3.jpg    1x,
+                              images/product/usb-3@2x.jpg 2x
+                            "
+                            alt="usb adaptor side view"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/usb-4.jpg"
-                          srcset="
-                            ./images/product/usb-4.jpg    1x,
-                            ./images/product/usb-4@2x.jpg 2x
-                          "
-                          alt="usb adaptor`s father nest"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/usb-4.webp    1x,
+                              images/product/usb-4@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/usb-4.jpg"
+                            srcset="
+                              images/product/usb-4.jpg    1x,
+                              images/product/usb-4@2x.jpg 2x
+                            "
+                            alt="usb adaptor`s father nest"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/usb-5.jpg"
-                          srcset="
-                            ./images/product/usb-5.jpg    1x,
-                            ./images/product/usb-5@2x.jpg 2x
-                          "
-                          alt="usb adaptor`s mother nest"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/usb-5.webp    1x,
+                              images/product/usb-5@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/usb-5.jpg"
+                            srcset="
+                              images/product/usb-5.jpg    1x,
+                              images/product/usb-5@2x.jpg 2x
+                            "
+                            alt="usb adaptor`s mother nest"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li
                         class="product-swiper__cell product-swiper__cell--big-l"
                       >
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/coffee-1.jpg"
-                          srcset="
-                            ./images/product/coffee-1.jpg    1x,
-                            ./images/product/coffee-1@2x.jpg 2x
-                          "
-                          alt="3d coffee machine made a cap of coffee"
-                          width="520"
-                          height="520"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/coffee-1.webp    1x,
+                              images/product/coffee-1@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/coffee-1.jpg"
+                            srcset="
+                              images/product/coffee-1.jpg    1x,
+                              images/product/coffee-1@2x.jpg 2x
+                            "
+                            alt="3d coffee machine made a cap of coffee"
+                            width="520"
+                            height="520"
+                          />
+                        </picture>
                       </li>
                       <li
                         class="product-swiper__cell product-swiper__cell--big-r"
                       >
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/coffee-2.jpg"
-                          srcset="
-                            ./images/product/coffee-2.jpg    1x,
-                            ./images/product/coffee-2@2x.jpg 2x
-                          "
-                          alt="3d coffee machine on the kitchen"
-                          width="520"
-                          height="520"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/coffee-2.webp    1x,
+                              images/product/coffee-2@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/coffee-2.jpg"
+                            srcset="
+                              images/product/coffee-2.jpg    1x,
+                              images/product/coffee-2@2x.jpg 2x
+                            "
+                            alt="3d coffee machine on the kitchen"
+                            width="520"
+                            height="520"
+                          />
+                        </picture>
                       </li>
                       <li
                         class="product-swiper__cell product-swiper__cell--big-l"
                       >
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/razor-1.jpg"
-                          srcset="
-                            ./images/product/razor-1.jpg    1x,
-                            ./images/product/razor-1@2x.jpg 2x
-                          "
-                          alt="3d razors are presented in different colors"
-                          width="520"
-                          height="520"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/razor-1.webp    1x,
+                              images/product/razor-1@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/razor-1.jpg"
+                            srcset="
+                              images/product/razor-1.jpg    1x,
+                              images/product/razor-1@2x.jpg 2x
+                            "
+                            alt="3d razors are presented in different colors"
+                            width="520"
+                            height="520"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/razor-2.jpg"
-                          srcset="
-                            ./images/product/razor-2.jpg    1x,
-                            ./images/product/razor-2@2x.jpg 2x
-                          "
-                          alt="red variant of the razor"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/razor-2.webp    1x,
+                              images/product/razor-2@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/razor-2.jpg"
+                            srcset="
+                              images/product/razor-2.jpg    1x,
+                              images/product/razor-2@2x.jpg 2x
+                            "
+                            alt="red variant of the razor"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/razor-3.jpg"
-                          srcset="
-                            ./images/product/razor-3.jpg    1x,
-                            ./images/product/razor-3@2x.jpg 2x
-                          "
-                          alt="blue variant of the razor"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/razor-3.webp    1x,
+                              images/product/razor-3@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/razor-3.jpg"
+                            srcset="
+                              images/product/razor-3.jpg    1x,
+                              images/product/razor-3@2x.jpg 2x
+                            "
+                            alt="blue variant of the razor"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/razor-4.jpg"
-                          srcset="
-                            ./images/product/razor-4.jpg    1x,
-                            ./images/product/razor-4@2x.jpg 2x
-                          "
-                          alt="black variant of the razor"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/razor-4.webp    1x,
+                              images/product/razor-4@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/razor-4.jpg"
+                            srcset="
+                              images/product/razor-4.jpg    1x,
+                              images/product/razor-4@2x.jpg 2x
+                            "
+                            alt="black variant of the razor"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/razor-5.jpg"
-                          srcset="
-                            ./images/product/razor-5.jpg    1x,
-                            ./images/product/razor-5@2x.jpg 2x
-                          "
-                          alt="whole collection of razors in different colors"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/razor-5.webp    1x,
+                              images/product/razor-5@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/razor-5.jpg"
+                            srcset="
+                              images/product/razor-5.jpg    1x,
+                              images/product/razor-5@2x.jpg 2x
+                            "
+                            alt="whole collection of razors in different colors"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                     </ul>
                   </div>
@@ -614,166 +866,270 @@
                       <li
                         class="product-swiper__cell product-swiper__cell--big-l"
                       >
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/earpods-1.jpg"
-                          srcset="
-                            ./images/product/earpods-1.jpg    1x,
-                            ./images/product/earpods-1@2x.jpg 2x
-                          "
-                          alt="earpods charging box"
-                          width="520"
-                          height="520"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/earpods-1.webp    1x,
+                              images/product/earpods-1@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/earpods-1.jpg"
+                            srcset="
+                              images/product/earpods-1.jpg    1x,
+                              images/product/earpods-1@2x.jpg 2x
+                            "
+                            alt="earpods charging box"
+                            width="520"
+                            height="520"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/earpods-2.jpg"
-                          srcset="
-                            ./images/product/earpods-2.jpg    1x,
-                            ./images/product/earpods-2@2x.jpg 2x
-                          "
-                          alt="earpods black variant"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/earpods-2.webp    1x,
+                              images/product/earpods-2@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/earpods-2.jpg"
+                            srcset="
+                              images/product/earpods-2.jpg    1x,
+                              images/product/earpods-2@2x.jpg 2x
+                            "
+                            alt="earpods black variant"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/earpods-3.jpg"
-                          srcset="
-                            ./images/product/earpods-3.jpg    1x,
-                            ./images/product/earpods-3@2x.jpg 2x
-                          "
-                          alt="earpods are strongle fixed in the charging box"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/earpods-3.webp    1x,
+                              images/product/earpods-3@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/earpods-3.jpg"
+                            srcset="
+                              images/product/earpods-3.jpg    1x,
+                              images/product/earpods-3@2x.jpg 2x
+                            "
+                            alt="earpods are strongle fixed in the charging box"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/earpods-3.jpg"
-                          srcset="
-                            ./images/product/earpods-3.jpg    1x,
-                            ./images/product/earpods-3@2x.jpg 2x
-                          "
-                          alt="earpods are strongle fixed in the charging box"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/earpods-3.webp    1x,
+                              images/product/earpods-3@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/earpods-3.jpg"
+                            srcset="
+                              images/product/earpods-3.jpg    1x,
+                              images/product/earpods-3@2x.jpg 2x
+                            "
+                            alt="earpods are strongle fixed in the charging box"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/earpods-5.jpg"
-                          srcset="
-                            ./images/product/earpods-5.jpg    1x,
-                            ./images/product/earpods-5@2x.jpg 2x
-                          "
-                          alt="transportable packaging of the earpods"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/earpods-5.webp    1x,
+                              images/product/earpods-5@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/earpods-5.jpg"
+                            srcset="
+                              images/product/earpods-5.jpg    1x,
+                              images/product/earpods-5@2x.jpg 2x
+                            "
+                            alt="transportable packaging of the earpods"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li
                         class="product-swiper__cell product-swiper__cell--big-l"
                       >
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/holder-1.jpg"
-                          srcset="
-                            ./images/product/holder-1.jpg    1x,
-                            ./images/product/holder-1@2x.jpg 2x
-                          "
-                          alt="the phone holder is fixed on the table"
-                          width="520"
-                          height="520"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/holder-1.webp    1x,
+                              images/product/holder-1@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/holder-1.jpg"
+                            srcset="
+                              images/product/holder-1.jpg    1x,
+                              images/product/holder-1@2x.jpg 2x
+                            "
+                            alt="the phone holder is fixed on the table"
+                            width="520"
+                            height="520"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/holder-2.jpg"
-                          srcset="
-                            ./images/product/holder-2.jpg    1x,
-                            ./images/product/holder-2@2x.jpg 2x
-                          "
-                          alt="the phone holder floating in the air top view"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/holder-2.webp    1x,
+                              images/product/holder-2@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/holder-2.jpg"
+                            alt="the phone holder floating in the air top view"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/holder-3.jpg"
-                          srcset="
-                            ./images/product/holder-3.jpg    1x,
-                            ./images/product/holder-3@2x.jpg 2x
-                          "
-                          alt="compact and easy to reinstall phone holder"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/holder-3.webp    1x,
+                              images/product/holder-3@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/holder-3.jpg"
+                            srcset="
+                              images/product/holder-3.jpg    1x,
+                              images/product/holder-3@2x.jpg 2x
+                            "
+                            alt="compact and easy to reinstall phone holder"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/holder-4.jpg"
-                          srcset="
-                            ./images/product/holder-4.jpg    1x,
-                            ./images/product/holder-4@2x.jpg 2x
-                          "
-                          alt="the phone holder floating in the air back view"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/holder-4.webp    1x,
+                              images/product/holder-4@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/holder-4.jpg"
+                            srcset="
+                              images/product/holder-4.jpg    1x,
+                              images/product/holder-4@2x.jpg 2x
+                            "
+                            alt="the phone holder floating in the air back view"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li class="product-swiper__cell">
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/holder-5.jpg"
-                          srcset="
-                            ./images/product/holder-5.jpg    1x,
-                            ./images/product/holder-5@2x.jpg 2x
-                          "
-                          alt="three foldable phone holders"
-                          width="250"
-                          height="250"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/holder-5.webp    1x,
+                              images/product/holder-5@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/holder-5.jpg"
+                            srcset="
+                              images/product/holder-5.jpg    1x,
+                              images/product/holder-5@2x.jpg 2x
+                            "
+                            alt="three foldable phone holders"
+                            width="250"
+                            height="250"
+                          />
+                        </picture>
                       </li>
                       <li
                         class="product-swiper__cell product-swiper__cell--big-l"
                       >
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/conditioner.jpg"
-                          srcset="
-                            ./images/product/conditioner.jpg    1x,
-                            ./images/product/conditioner@2x.jpg 2x
-                          "
-                          alt="volume conditioner for essential hair recovery"
-                          width="520"
-                          height="520"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/conditioner.webp    1x,
+                              images/product/conditioner@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/conditioner.jpg"
+                            srcset="
+                              images/product/conditioner.jpg    1x,
+                              images/product/conditioner@2x.jpg 2x
+                            "
+                            alt="volume conditioner for essential hair recovery"
+                            width="520"
+                            height="520"
+                          />
+                        </picture>
                       </li>
                       <li
                         class="product-swiper__cell product-swiper__cell--big-r"
                       >
-                        <img
-                          class="product-swiper__img"
-                          src="./images/product/flashlight.jpg"
-                          srcset="
-                            ./images/product/flashlight.jpg    1x,
-                            ./images/product/flashlight@2x.jpg 2x
-                          "
-                          alt="black flashlight"
-                          width="520"
-                          height="520"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/product/flashlight.webp    1x,
+                              images/product/flashlight@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="product-swiper__img"
+                            src="images/product/flashlight.jpg"
+                            srcset="
+                              images/product/flashlight.jpg    1x,
+                              images/product/flashlight@2x.jpg 2x
+                            "
+                            alt="black flashlight"
+                            width="520"
+                            height="520"
+                          />
+                        </picture>
                       </li>
                     </ul>
                   </div>
@@ -784,7 +1140,7 @@
                 type="button"
               >
                 <svg>
-                  <use href="./images/icons.svg#icon-arrow"></use>
+                  <use href="images/icons.svg#icon-arrow"></use>
                 </svg>
               </button>
               <button
@@ -792,7 +1148,7 @@
                 type="button"
               >
                 <svg>
-                  <use href="./images/icons.svg#icon-arrow"></use>
+                  <use href="images/icons.svg#icon-arrow"></use>
                 </svg>
               </button>
             </div>
@@ -801,7 +1157,7 @@
               <a href="#contact" class="btn btn__primary btn__fit"
                 >Get in touch today
                 <svg class="btn__arrow">
-                  <use href="./images/icons.svg#icon-arrow"></use>
+                  <use href="images/icons.svg#icon-arrow"></use>
                 </svg>
               </a>
               <a href="#prices" class="btn btn__outline btn__fit">Prices</a>
@@ -841,7 +1197,7 @@
                         class="product-card__link btn btn__primary btn__fit"
                         >Prices
                         <svg class="btn__arrow">
-                          <use href="./images/icons.svg#icon-arrow"></use>
+                          <use href="images/icons.svg#icon-arrow"></use>
                         </svg>
                       </a>
                       <div class="descr-card">
@@ -862,69 +1218,114 @@
                       >
                         <div class="swiper-wrapper">
                           <div class="swiper-slide">
-                            <img
-                              class="product-card-swiper__img"
-                              src="./images/product-card-1-img1.jpg"
-                              srcset="
-                                ./images/product-card-1-img1.jpg    1x,
-                                ./images/product-card-1-img1@2x.jpg 2x
-                              "
-                              alt="compressor main image"
-                              width="520"
-                              height="520"
-                            />
+                            <picture>
+                              <source
+                                type="image/webp"
+                                srcset="
+                                  images/product-card-1-img1.webp    1x,
+                                  images/product-card-1-img1@2x.webp 2x
+                                "
+                              />
+                              <img
+                                class="product-card-swiper__img"
+                                src="images/product-card-1-img1.jpg"
+                                srcset="
+                                  images/product-card-1-img1.jpg    1x,
+                                  images/product-card-1-img1@2x.jpg 2x
+                                "
+                                alt="compressor main image"
+                                width="520"
+                                height="520"
+                              />
+                            </picture>
                           </div>
                           <div class="swiper-slide">
-                            <img
-                              class="product-card-swiper__img"
-                              src="./images/product-card-1-img2.jpg"
-                              srcset="
-                                ./images/product-card-1-img2.jpg    1x,
-                                ./images/product-card-1-img2@2x.jpg 2x
-                              "
-                              alt="compressor`s engine"
-                              width="520"
-                              height="520"
-                            />
+                            <picture>
+                              <source
+                                type="image/webp"
+                                srcset="
+                                  images/product-card-1-img2.webp    1x,
+                                  images/product-card-1-img2@2x.webp 2x
+                                "
+                              />
+                              <img
+                                class="product-card-swiper__img"
+                                src="images/product-card-1-img2.jpg"
+                                srcset="
+                                  images/product-card-1-img2.jpg    1x,
+                                  images/product-card-1-img2@2x.jpg 2x
+                                "
+                                alt="compressor`s engine"
+                                width="520"
+                                height="520"
+                              />
+                            </picture>
                           </div>
                           <div class="swiper-slide">
-                            <img
-                              class="product-card-swiper__img"
-                              src="./images/product-card-1-img3.jpg"
-                              srcset="
-                                ./images/product-card-1-img3.jpg    1x,
-                                ./images/product-card-1-img3@2x.jpg 2x
-                              "
-                              alt="compressor`s air gun"
-                              width="520"
-                              height="520"
-                            />
+                            <picture>
+                              <source
+                                type="image/webp"
+                                srcset="
+                                  images/product-card-1-img3.webp    1x,
+                                  images/product-card-1-img3@2x.webp 2x
+                                "
+                              />
+                              <img
+                                class="product-card-swiper__img"
+                                src="images/product-card-1-img3.jpg"
+                                srcset="
+                                  images/product-card-1-img3.jpg    1x,
+                                  images/product-card-1-img3@2x.jpg 2x
+                                "
+                                alt="compressor`s air gun"
+                                width="520"
+                                height="520"
+                              />
+                            </picture>
                           </div>
                           <div class="swiper-slide">
-                            <img
-                              class="product-card-swiper__img"
-                              src="./images/product-card-1-img4.jpg"
-                              srcset="
-                                ./images/product-card-1-img4.jpg    1x,
-                                ./images/product-card-1-img4@2x.jpg 2x
-                              "
-                              alt="compressor`s cooler"
-                              width="520"
-                              height="520"
-                            />
+                            <picture>
+                              <source
+                                type="image/webp"
+                                srcset="
+                                  images/product-card-1-img4.webp    1x,
+                                  images/product-card-1-img4@2x.webp 2x
+                                "
+                              />
+                              <img
+                                class="product-card-swiper__img"
+                                src="images/product-card-1-img4.jpg"
+                                srcset="
+                                  images/product-card-1-img4.jpg    1x,
+                                  images/product-card-1-img4@2x.jpg 2x
+                                "
+                                alt="compressor`s cooler"
+                                width="520"
+                                height="520"
+                              />
+                            </picture>
                           </div>
                           <div class="swiper-slide">
-                            <img
-                              class="product-card-swiper__img"
-                              src="./images/product-card-1-img5.jpg"
-                              srcset="
-                                ./images/product-card-1-img5.jpg    1x,
-                                ./images/product-card-1-img5@2x.jpg 2x
-                              "
-                              alt="back side of the compressor"
-                              width="520"
-                              height="520"
-                            />
+                            <picture>
+                              <source
+                                type="image/webp"
+                                srcset="
+                                  images/product-card-1-img5.webp    1x,
+                                  images/product-card-1-img5@2x.webp 2x
+                                "
+                              />
+                              <img
+                                class="product-card-swiper__img"
+                                src="images/product-card-1-img5.jpg"
+                                srcset="
+                                  images/product-card-1-img5.jpg    1x,
+                                  images/product-card-1-img5@2x.jpg 2x
+                                "
+                                alt="back side of the compressor"
+                                width="520"
+                                height="520"
+                              />
+                            </picture>
                           </div>
                         </div>
                       </div>
@@ -933,7 +1334,7 @@
                         type="button"
                       >
                         <svg>
-                          <use href="./images/icons.svg#icon-arrow"></use>
+                          <use href="images/icons.svg#icon-arrow"></use>
                         </svg>
                       </button>
                       <button
@@ -941,7 +1342,7 @@
                         type="button"
                       >
                         <svg>
-                          <use href="./images/icons.svg#icon-arrow"></use>
+                          <use href="images/icons.svg#icon-arrow"></use>
                         </svg>
                       </button>
                     </div>
@@ -984,7 +1385,7 @@
                         class="product-card__link btn btn__primary btn__fit"
                         >Prices
                         <svg class="btn__arrow">
-                          <use href="./images/icons.svg#icon-arrow"></use>
+                          <use href="images/icons.svg#icon-arrow"></use>
                         </svg>
                       </a>
                       <div class="descr-card">
@@ -1004,43 +1405,66 @@
                       >
                         <div class="swiper-wrapper">
                           <div class="swiper-slide">
-                            <img
-                              class="product-card-swiper__img"
-                              src="./images/product-card-2-img1.jpg"
-                              srcset="
-                                ./images/product-card-2-img1.jpg    1x,
-                                ./images/product-card-2-img1@2x.jpg 2x
-                              "
-                              alt="capsaicin, an anti-hair loss conditioner"
-                              width="520"
-                              height="520"
-                            />
+                            <picture>
+                              <source
+                                type="image/webp"
+                                srcset="
+                                  images/product-card-2-img1.webp    1x,
+                                  images/product-card-2-img1@2x.webp 2x
+                                "
+                              />
+                              <img
+                                class="product-card-swiper__img"
+                                src="images/product-card-2-img1.jpg"
+                                alt="capsaicin, an anti-hair loss conditioner"
+                                width="520"
+                                height="520"
+                              />
+                            </picture>
                           </div>
                           <div class="swiper-slide">
-                            <img
-                              class="product-card-swiper__img"
-                              src="./images/product-card-2-img2.jpg"
-                              srcset="
-                                ./images/product-card-2-img2.jpg    1x,
-                                ./images/product-card-2-img2@2x.jpg 2x
-                              "
-                              alt="the top side of a bottle of capsaicin"
-                              width="520"
-                              height="520"
-                            />
+                            <picture>
+                              <source
+                                type="image/webp"
+                                srcset="
+                                  images/product-card-2-img2.webp    1x,
+                                  images/product-card-2-img2@2x.webp 2x
+                                "
+                              />
+                              <img
+                                class="product-card-swiper__img"
+                                src="images/product-card-2-img2.jpg"
+                                srcset="
+                                  images/product-card-2-img2.jpg    1x,
+                                  images/product-card-2-img2@2x.jpg 2x
+                                "
+                                alt="the top side of a bottle of capsaicin"
+                                width="520"
+                                height="520"
+                              />
+                            </picture>
                           </div>
                           <div class="swiper-slide">
-                            <img
-                              class="product-card-swiper__img"
-                              src="./images/product-card-2-img3.jpg"
-                              srcset="
-                                ./images/product-card-2-img3.jpg    1x,
-                                ./images/product-card-2-img3@2x.jpg 2x
-                              "
-                              alt="the bottom side of a bottle of capsaicin"
-                              width="520"
-                              height="520"
-                            />
+                            <picture>
+                              <source
+                                type="image/webp"
+                                srcset="
+                                  images/product-card-2-img3.webp    1x,
+                                  images/product-card-2-img3@2x.webp 2x
+                                "
+                              />
+                              <img
+                                class="product-card-swiper__img"
+                                src="images/product-card-2-img3.jpg"
+                                srcset="
+                                  images/product-card-2-img3.jpg    1x,
+                                  images/product-card-2-img3@2x.jpg 2x
+                                "
+                                alt="the bottom side of a bottle of capsaicin"
+                                width="520"
+                                height="520"
+                              />
+                            </picture>
                           </div>
                         </div>
                       </div>
@@ -1049,7 +1473,7 @@
                         type="button"
                       >
                         <svg>
-                          <use href="./images/icons.svg#icon-arrow"></use>
+                          <use href="images/icons.svg#icon-arrow"></use>
                         </svg>
                       </button>
                       <button
@@ -1057,7 +1481,7 @@
                         type="button"
                       >
                         <svg>
-                          <use href="./images/icons.svg#icon-arrow"></use>
+                          <use href="images/icons.svg#icon-arrow"></use>
                         </svg>
                       </button>
                     </div>
@@ -1099,7 +1523,7 @@
                         class="product-card__link btn btn__primary btn__fit"
                         >Prices
                         <svg class="btn__arrow">
-                          <use href="./images/icons.svg#icon-arrow"></use>
+                          <use href="images/icons.svg#icon-arrow"></use>
                         </svg>
                       </a>
                       <div class="descr-card">
@@ -1116,16 +1540,24 @@
                       id="videoCover"
                       data-video-url="https://www.youtube.com/embed/MUOV0dp2eqo?autoplay=1&muted=1"
                     >
-                      <img
-                        class="product-card__video-cover-img"
-                        src="./images/product-card-3-video1.jpg"
-                        srcset="
-                          ./images/product-card-3-video1.jpg    1x,
-                          ./images/product-card-3-video1@2x.jpg 2x
-                        "
-                        alt="watch review video cover"
-                      />
-
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            images/product-card-3-video1.webp    1x,
+                            images/product-card-3-video1@2x.webp 2x
+                          "
+                        />
+                        <img
+                          class="product-card__video-cover-img"
+                          src="images/product-card-3-video1.jpg"
+                          srcset="
+                            images/product-card-3-video1.jpg    1x,
+                            images/product-card-3-video1@2x.jpg 2x
+                          "
+                          alt="watch review video cover"
+                        />
+                      </picture>
                       <button
                         class="product-card__video-play-btn"
                         id="openBtn"
@@ -1147,10 +1579,13 @@
             </h2>
             <ul class="prices-section__list">
               <li class="prices-section__list-item price-card" id="priceCard1">
+                <!-- Добавить выбор webp в JS - это асинхронный JS -->
                 <div
                   class="price-card__img"
-                  data-src="./images/price-card-1.jpg"
-                  data-src-2x="./images/price-card-1@2x.jpg"
+                  data-src="images/price-card-1.jpg"
+                  data-src-2x="images/price-card-1@2x.jpg"
+                  data-src-webp="images/price-card-1.webp"
+                  data-src-webp-2x="images/price-card-1@2x.webp"
                 ></div>
                 <div class="price-card__inner">
                   <h3 class="price-card__title title price-card__inner--side">
@@ -1182,7 +1617,7 @@
                     <a class="btn btn__secondary" href="#contact"
                       >Contact us
                       <svg class="btn__arrow">
-                        <use href="./images/icons.svg#icon-arrow"></use>
+                        <use href="images/icons.svg#icon-arrow"></use>
                       </svg>
                     </a>
                   </div>
@@ -1191,8 +1626,10 @@
               <li class="prices-section__list-item price-card" id="priceCard2">
                 <div
                   class="price-card__img"
-                  data-src="./images/price-card-2.jpg"
-                  data-src-2x="./images/price-card-2@2x.jpg"
+                  data-src="images/price-card-2.jpg"
+                  data-src-2x="images/price-card-2@2x.jpg"
+                  data-src-webp="images/price-card-2.webp"
+                  data-src-webp-2x="images/price-card-2@2x.webp"
                 ></div>
                 <div class="price-card__inner">
                   <h3 class="price-card__title title price-card__inner--side">
@@ -1224,7 +1661,7 @@
                     <a class="btn btn__secondary" href="#contact"
                       >Contact us
                       <svg class="btn__arrow">
-                        <use href="./images/icons.svg#icon-arrow"></use>
+                        <use href="images/icons.svg#icon-arrow"></use>
                       </svg>
                     </a>
                   </div>
@@ -1233,8 +1670,10 @@
               <li class="prices-section__list-item price-card" id="priceCard3">
                 <div
                   class="price-card__img"
-                  data-src="./images/price-card-3.jpg"
-                  data-src-2x="./images/price-card-3@2x.jpg"
+                  data-src="images/price-card-3.jpg"
+                  data-src-2x="images/price-card-3@2x.jpg"
+                  data-src-webp="images/price-card-3.webp"
+                  data-src-webp-2x="images/price-card-3@2x.webp"
                 ></div>
                 <div class="price-card__inner">
                   <h3 class="price-card__title title price-card__inner--side">
@@ -1266,7 +1705,7 @@
                     <a class="btn btn__secondary" href="#contact"
                       >Contact us
                       <svg class="btn__arrow">
-                        <use href="./images/icons.svg#icon-arrow"></use>
+                        <use href="images/icons.svg#icon-arrow"></use>
                       </svg>
                     </a>
                   </div>
@@ -1290,17 +1729,26 @@
                   <div class="swiper-slide">
                     <div class="team-card">
                       <div class="team-card__photo">
-                        <img
-                          class="team-card__img"
-                          src="./images/team-foto1.png"
-                          srcset="
-                            ./images/team-foto1.png    1x,
-                            ./images/team-foto1@2x.png 2x
-                          "
-                          alt="Photo of Cyril Genba"
-                          width="210"
-                          height="244"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/team-foto1.webp    1x,
+                              images/team-foto1@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="team-card__img"
+                            src="images/team-foto1.png"
+                            srcset="
+                              images/team-foto1.png    1x,
+                              images/team-foto1@2x.png 2x
+                            "
+                            alt="Photo of Cyril Genba"
+                            width="210"
+                            height="244"
+                          />
+                        </picture>
                       </div>
                       <h3 class="team-card__name">Cyril Genba</h3>
                       <p class="team-card__caption">CMO</p>
@@ -1309,17 +1757,26 @@
                   <div class="swiper-slide">
                     <div class="team-card">
                       <div class="team-card__photo">
-                        <img
-                          class="team-card__img"
-                          src="./images/team-foto2.png"
-                          srcset="
-                            ./images/team-foto2.png    1x,
-                            ./images/team-foto2@2x.png 2x
-                          "
-                          alt="Photo of Yulia Volynskova"
-                          width="210"
-                          height="244"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/team-foto2.webp    1x,
+                              images/team-foto2@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="team-card__img"
+                            src="images/team-foto2.png"
+                            srcset="
+                              images/team-foto2.png    1x,
+                              images/team-foto2@2x.png 2x
+                            "
+                            alt="Photo of Yulia Volynskova"
+                            width="210"
+                            height="244"
+                          />
+                        </picture>
                       </div>
                       <h3 class="team-card__name">Yulia Volynskova</h3>
                       <p class="team-card__caption">CPO</p>
@@ -1328,17 +1785,26 @@
                   <div class="swiper-slide">
                     <div class="team-card">
                       <div class="team-card__photo">
-                        <img
-                          class="team-card__img"
-                          src="./images/team-foto3.png"
-                          srcset="
-                            ./images/team-foto3.png    1x,
-                            ./images/team-foto3@2x.png 2x
-                          "
-                          alt="Empty photo-box"
-                          width="142"
-                          height="188"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/team-foto3.webp    1x,
+                              images/team-foto3@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="team-card__img"
+                            src="images/team-foto3.png"
+                            srcset="
+                              images/team-foto3.png    1x,
+                              images/team-foto3@2x.png 2x
+                            "
+                            alt="Empty photo-box"
+                            width="142"
+                            height="188"
+                          />
+                        </picture>
                       </div>
 
                       <h3 class="team-card__name">Max Volynsckov</h3>
@@ -1348,17 +1814,26 @@
                   <div class="swiper-slide">
                     <div class="team-card">
                       <div class="team-card__photo">
-                        <img
-                          class="team-card__img"
-                          src="./images/team-foto3.png"
-                          srcset="
-                            ./images/team-foto3.png    1x,
-                            ./images/team-foto3@2x.png 2x
-                          "
-                          alt="Empty photo-box"
-                          width="142"
-                          height="188"
-                        />
+                        <picture>
+                          <source
+                            type="image/webp"
+                            srcset="
+                              images/team-foto3.webp    1x,
+                              images/team-foto3@2x.webp 2x
+                            "
+                          />
+                          <img
+                            class="team-card__img"
+                            src="images/team-foto3.png"
+                            srcset="
+                              images/team-foto3.png    1x,
+                              images/team-foto3@2x.png 2x
+                            "
+                            alt="Empty photo-box"
+                            width="142"
+                            height="188"
+                          />
+                        </picture>
                       </div>
 
                       <h3 class="team-card__name">Apas Yancauscas</h3>
@@ -1372,7 +1847,7 @@
                 type="button"
               >
                 <svg>
-                  <use href="./images/icons.svg#icon-arrow"></use>
+                  <use href="images/icons.svg#icon-arrow"></use>
                 </svg>
               </button>
               <button
@@ -1380,7 +1855,7 @@
                 type="button"
               >
                 <svg>
-                  <use href="./images/icons.svg#icon-arrow"></use>
+                  <use href="images/icons.svg#icon-arrow"></use>
                 </svg>
               </button>
             </div>
@@ -1390,17 +1865,26 @@
               <li class="team-section__list-item">
                 <div class="team-card">
                   <div class="team-card__photo team-card__photo--offset">
-                    <img
-                      class="team-card__img"
-                      src="./images/team-foto1.png"
-                      srcset="
-                        ./images/team-foto1.png    1x,
-                        ./images/team-foto1@2x.png 2x
-                      "
-                      alt="Photo of Cyril Genba"
-                      width="202"
-                      height="233"
-                    />
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          images/team-foto1.webp    1x,
+                          images/team-foto1@2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="team-card__img"
+                        src="images/team-foto1.png"
+                        srcset="
+                          images/team-foto1.png    1x,
+                          images/team-foto1@2x.png 2x
+                        "
+                        alt="Photo of Cyril Genba"
+                        width="202"
+                        height="233"
+                      />
+                    </picture>
                   </div>
 
                   <h3 class="team-card__name">Cyril Genba</h3>
@@ -1410,17 +1894,26 @@
               <li class="team-section__list-item">
                 <div class="team-card">
                   <div class="team-card__photo">
-                    <img
-                      class="team-card__img"
-                      src="./images/team-foto2.png"
-                      srcset="
-                        ./images/team-foto2.png    1x,
-                        ./images/team-foto2@2x.png 2x
-                      "
-                      alt="Photo of Yulia Volynskova"
-                      width="210"
-                      height="244"
-                    />
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          images/team-foto2.webp    1x,
+                          images/team-foto2@2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="team-card__img"
+                        src="images/team-foto2.png"
+                        srcset="
+                          images/team-foto2.png    1x,
+                          images/team-foto2@2x.png 2x
+                        "
+                        alt="Photo of Yulia Volynskova"
+                        width="210"
+                        height="244"
+                      />
+                    </picture>
                   </div>
                   <h3 class="team-card__name">Yulia Volynskova</h3>
                   <p class="team-card__caption">CPO</p>
@@ -1429,17 +1922,26 @@
               <li class="team-section__list-item">
                 <div class="team-card">
                   <div class="team-card__photo">
-                    <img
-                      class="team-card__img"
-                      src="./images/team-foto3.png"
-                      srcset="
-                        ./images/team-foto3.png    1x,
-                        ./images/team-foto3@2x.png 2x
-                      "
-                      alt="Empty photo-box"
-                      width="142"
-                      height="188"
-                    />
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          images/team-foto3.webp    1x,
+                          images/team-foto3@2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="team-card__img"
+                        src="images/team-foto3.png"
+                        srcset="
+                          images/team-foto3.png    1x,
+                          images/team-foto3@2x.png 2x
+                        "
+                        alt="Empty photo-box"
+                        width="142"
+                        height="188"
+                      />
+                    </picture>
                   </div>
 
                   <h3 class="team-card__name">Max Volynsckov</h3>
@@ -1449,17 +1951,26 @@
               <li class="team-section__list-item">
                 <div class="team-card">
                   <div class="team-card__photo">
-                    <img
-                      class="team-card__img"
-                      src="./images/team-foto3.png"
-                      srcset="
-                        ./images/team-foto3.png    1x,
-                        ./images/team-foto3@2x.png 2x
-                      "
-                      alt="Empty photo-box"
-                      width="142"
-                      height="188"
-                    />
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          images/team-foto3.webp    1x,
+                          images/team-foto3@2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="team-card__img"
+                        src="images/team-foto3.png"
+                        srcset="
+                          images/team-foto3.png    1x,
+                          images/team-foto3@2x.png 2x
+                        "
+                        alt="Empty photo-box"
+                        width="142"
+                        height="188"
+                      />
+                    </picture>
                   </div>
 
                   <h3 class="team-card__name">Apas Yancauscas</h3>
@@ -1491,7 +2002,7 @@
                   <div class="priority-section__contacts-wrapper">
                     <div class="priority-section__contacts-tel">
                       <svg class="priority-section__icon icon-color4">
-                        <use href="./images/icons.svg#icon-call"></use>
+                        <use href="images/icons.svg#icon-call"></use>
                       </svg>
                       <a class="priority-section__link" href="tel:+79878373829"
                         >+7 (987) 837-38-29</a
@@ -1499,7 +2010,7 @@
                     </div>
                     <div class="priority-section__contacts-email">
                       <svg class="priority-section__icon icon-color4">
-                        <use href="./images/icons.svg#icon-email"></use>
+                        <use href="images/icons.svg#icon-email"></use>
                       </svg>
                       <a class="priority-section__link" href="tel:+79878373829"
                         >+7 (987) 837-38-29</a
@@ -1510,15 +2021,24 @@
               </div>
               <div class="priority-section__images">
                 <div class="priority-section__img-outer">
-                  <img
-                    class="priority-section__img"
-                    src="./images/priority-1.jpg"
-                    srcset="
-                      ./images/priority-1.jpg    1x,
-                      ./images/priority-1@2x.jpg 2x
-                    "
-                    alt="Working process"
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        images/priority-1.webp    1x,
+                        images/priority-1@2x.webp 2x
+                      "
+                    />
+                    <img
+                      class="priority-section__img"
+                      src="images/priority-1.jpg"
+                      srcset="
+                        images/priority-1.jpg    1x,
+                        images/priority-1@2x.jpg 2x
+                      "
+                      alt="Working process"
+                    />
+                  </picture>
                 </div>
               </div>
               <address
@@ -1528,7 +2048,7 @@
                 <div class="priority-section__contacts-wrapper">
                   <div class="priority-section__contacts-tel">
                     <svg class="priority-section__icon icon-color4">
-                      <use href="./images/icons.svg#icon-call"></use>
+                      <use href="images/icons.svg#icon-call"></use>
                     </svg>
                     <a class="priority-section__link" href="tel:+79878373829"
                       >+7 (987) 837-38-29</a
@@ -1536,7 +2056,7 @@
                   </div>
                   <div class="priority-section__contacts-email">
                     <svg class="priority-section__icon icon-color4">
-                      <use href="./images/icons.svg#icon-email"></use>
+                      <use href="images/icons.svg#icon-email"></use>
                     </svg>
                     <a class="priority-section__link" href="tel:+79878373829"
                       >+7 (987) 837-38-29</a
@@ -1625,7 +2145,7 @@
                   <button class="btn btn__action" type="submit" id="btnSubmit">
                     Contact us
                     <svg class="btn__arrow">
-                      <use href="./images/icons.svg#icon-arrow"></use>
+                      <use href="images/icons.svg#icon-arrow"></use>
                     </svg>
                   </button>
                   <div
@@ -1658,7 +2178,7 @@
             <a class="footer__logo-link" href="index.html">
               <img
                 class="footer__logo-img"
-                src="./images/logo-footer.svg"
+                src="images/logo-footer.svg"
                 alt="Logo of the 3d Product"
               />
             </a>

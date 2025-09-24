@@ -182,10 +182,14 @@
       height: 223px;
       background-image: url('../images/about-section-grid.png');
       background-image: -webkit-image-set(
+        url('../images/about-section-grid.webp') 1x,
+        url('../images/about-section-grid@2x.webp') 2x,
         url('../images/about-section-grid.png') 1x,
         url('../images/about-section-grid@2x.png') 2x
       );
       background-image: image-set(
+        url('../images/about-section-grid.webp') type('image/webp') 1x,
+        url('../images/about-section-grid@2x.webp') type('image/webp') 2x,
         url('../images/about-section-grid.png') type('image/png') 1x,
         url('../images/about-section-grid@2x.png') type('image/png') 2x
       );
