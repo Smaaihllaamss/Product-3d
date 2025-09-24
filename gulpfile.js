@@ -55,16 +55,8 @@ function scripts() {
     .pipe(bs.stream());
 }
 
-function convertTTF() {
-  return src(paths.fonts.ttf)
-    .pipe(newer(paths.fonts.dest))
-    .pipe(ttf2woff2())
-    .pipe(size({ title: 'TTF to WOFF2' }))
-    .pipe(dest(paths.fonts.dest));
-}
-
-function copyWOFF() {
-  return src(paths.fonts.woff)
+function copyFonts() {
+  return src(paths.fonts.src)
     .pipe(newer(paths.fonts.dest))
     .pipe(dest(paths.fonts.dest));
 }
@@ -139,8 +131,7 @@ function watching() {
     },
   });
   watch([paths.html.src], html);
-  watch([paths.fonts.ttf], convertTTF);
-  watch([paths.fonts.woff], copyWOFF);
+  watch([paths.fonts.src], copyFonts);
   watch([paths.styles.main], styles);
   watch([paths.scripts.main], scripts);
   watch([paths.images.src], images);
@@ -165,8 +156,7 @@ export {
   html,
   styles,
   scripts,
-  convertTTF,
-  copyWOFF,
+  copyFonts,
   images,
   webpImages,
   sprite,
@@ -175,9 +165,8 @@ export {
   watching,
 };
 
-const fonts = parallel(/*convertTTF, */ copyWOFF);
 const processImages = parallel(webpImages, sprite);
-const staticAssets = parallel(fonts, images, copyResources, copySwiper);
+const staticAssets = parallel(copyFonts, images, copyResources, copySwiper);
 
 const prepare = parallel(html, styles, scripts, processImages, staticAssets);
 
