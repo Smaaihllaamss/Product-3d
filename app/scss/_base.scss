@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  // scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -32,10 +32,14 @@ body {
   line-height: 1.45;
   background-image: url('../images/bg-noise.png');
   background-image: -webkit-image-set(
+    url('../images/bg-noise.webp') 1x,
+    url('../images/bg-noise@2x.webp') 2x,
     url('../images/bg-noise.png') 1x,
     url('../images/bg-noise@2x.png') 2x
   );
   background-image: image-set(
+    url('../images/bg-noise.webp') type('image/webp') 1x,
+    url('../images/bg-noise@2x.webp') type('image/webp') 2x,
     url('../images/bg-noise.png') type('image/png') 1x,
     url('../images/bg-noise@2x.png') type('image/png') 2x
   );
