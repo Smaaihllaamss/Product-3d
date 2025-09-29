@@ -26,10 +26,10 @@ main {
 
 body {
   color: var(--primary);
-  font-family: var(--font-family);
+  font-family: var(--font-family) !important;
   font-size: 1rem; /* 1rem = 16px */
-  font-weight: 300;
-  font-style: normal;
+  font-weight: 300 !important;
+  font-style: normal !important;
   line-height: 1.45;
   background-image: url('../images/bg-noise.png');
   background-image: -webkit-image-set(
