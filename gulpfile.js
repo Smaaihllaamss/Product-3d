@@ -8,11 +8,12 @@ import concat from 'gulp-concat';
 import browserSyncLib from 'browser-sync';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
+import newer from 'gulp-newer';
 import rename from 'gulp-rename';
 import webp from 'gulp-webp';
 import svgSprite from 'gulp-svg-sprite';
 import size from 'gulp-size';
-import newer from 'gulp-newer';
+import debug from 'gulp-debug';
 import { createRequire } from 'module';
 import { deleteAsync } from 'del';
 
@@ -56,7 +57,7 @@ function scripts() {
 
 function copyFonts() {
   return src(paths.fonts.src)
-    .pipe(newer(paths.fonts.dest))
+    .pipe(debug({ title: 'Шрифт:' }))
     .pipe(dest(paths.fonts.dest));
 }
 
